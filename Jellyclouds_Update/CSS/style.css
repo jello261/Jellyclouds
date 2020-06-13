@@ -1,0 +1,41 @@
+body {
+    font-family: 'Arvo';
+}
+.nav {
+    left: 0%;
+    top: 0%;
+    padding: 6px;
+    position: fixed;
+    background-color: #2E9CCA;
+    width: 100%;
+    border-bottom: rgb(99, 99, 99);
+    border-width: 4px;
+    border-bottom-style: solid;
+    overflow: hidden;
+}
+#title:link, #title:visited {
+    font-family: 'Arvo';
+    font-size: 28px;
+    font-weight: bold;
+    color: #25274D;
+    text-decoration: none;
+    margin: 0px 50px 0px 20px;
+}
+#nav:link, #nav:visited {
+    font-size: 20px;
+    color: #25274D;
+    text-decoration: none;
+    margin: 0px 2px 0px 2px;
+}
+#title:hover, #nav:hover{
+    background-color: rgb(99, 99, 99);
+}
+.content {
+    margin: 6% 25% 0% 25%;
+    align-content: center;
+    overflow-wrap: break-word;
+    color: #25274D;
+}
+
+
+
