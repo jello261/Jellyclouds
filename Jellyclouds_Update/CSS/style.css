@@ -11,10 +11,9 @@ body {
     border-bottom: rgb(99, 99, 99);
     border-width: 4px;
     border-bottom-style: solid;
-    overflow: hidden;
+    overflow: 
 }
 #title:link, #title:visited {
-    font-family: 'Arvo';
     font-size: 28px;
     font-weight: bold;
     color: #25274D;
@@ -31,10 +30,15 @@ body {
     background-color: rgb(99, 99, 99);
 }
 .content {
-    margin: 6% 25% 0% 25%;
-    align-content: center;
+    margin: 4% 20% 0% 20%;
     overflow-wrap: break-word;
     color: #25274D;
+}
+.content_header {
+    background-color: #2E9CCA;
+    border-bottom: rgb(99, 99, 99);
+    border-width: 4px;
+    border-bottom-style: solid;
 }
 
 
