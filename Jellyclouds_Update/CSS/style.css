@@ -1,3 +1,4 @@
+/*Phone or anything with a with smaller then 768px*/
 body {
     font-family: 'Arvo';
 }
@@ -14,26 +15,54 @@ body {
     overflow: hidden;
 }
 #title:link, #title:visited {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: bold;
     color: #25274D;
     text-decoration: none;
-    margin: 0px 40px 0px 20px;
+    margin-left: 5px;
 }
-#title:hover, #nav:hover{
+.mobile-nav1, .mobile-nav2, .mobile-nav3{
+    position: fixed;
+    top: 6px;
+    right: 5%;
+    width: 42px;
+    height: 8px;
+    background-color: #25274D;
+    border-style:none;
+    border-radius: 4px;
+}
+.mobile-nav2{
+    position: fixed;
+    top: 17px;
+    right: 5%;
+    width: 42px;
+    height: 8px;
+    background-color: whitesmoke;
+    border-style:none;
+    border-radius: 4px;
+}
+.mobile-nav3{
+    position: fixed;
+    top: 30px;
+    right: 5%;
+    width: 42px;
+    height: 8px;
     background-color: rgb(99, 99, 99);
+    border-style:none;
+    border-radius: 4px;
 }
 #nav:link, #nav:visited {
     display: none;
 }
-
+#title:hover, #nav:hover{
+    background-color: rgb(99, 99, 99);
+}
 .content {
     margin-left: auto;
     margin-right: auto;
-    min-width: 20%;
-    padding-top: 6%;
+    padding-top: 40px;
     position: relative;
-    width: 85%;
+    width: 95%;
     overflow-wrap: break-word;
     color: #25274D;
 }
@@ -44,30 +73,18 @@ body {
     border-bottom-style: solid;
 }
 
+/*Ipad and desktop devices layout*/
 @media only screen and (min-width:768px) {
-    body {
-        font-family: 'Arvo';
-    }
     .nav {
-        left: 0%;
-        top: 0%;
         padding: 6px;
-        position: fixed;
-        background-color: #2E9CCA;
-        width: 100%;
-        border-bottom: rgb(99, 99, 99);
         border-width: 4px;
-        border-bottom-style: solid;
-        overflow: hidden;
     }
     #title:link, #title:visited {
         font-size: 28px;
-        font-weight: bold;
-        color: #25274D;
-        text-decoration: none;
         margin: 0px 50px 0px 20px;
     }
     #nav:link, #nav:visited {
+        display: inline;
         font-size: 20px;
         color: #25274D;
         text-decoration: none;
@@ -77,20 +94,16 @@ body {
         background-color: rgb(99, 99, 99);
     }
     .content {
-        margin-left: auto;
-        margin-right: auto;
-        min-width: 20%;
-        padding-top: 5%;
-        position: relative;
-        width: 50%;
-        overflow-wrap: break-word;
-        color: #25274D;
+        width: 75%;
     }
-    .content_header {
+    .mobile-nav3, .mobile-nav1, .mobile-nav2 {
+        display:none;
+    }
+    /*.content_header {
         background-color: #2E9CCA;
         border-bottom: rgb(99, 99, 99);
         border-width: 4px;
         border-bottom-style: solid;
     }
+    */
 }
-
