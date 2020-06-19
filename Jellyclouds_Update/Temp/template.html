@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel="stylesheet" href="CSS/style.css">
         <link href='https://fonts.googleapis.com/css?family=Arvo' rel="stylesheet">
         <title>JellyClouds</title>
     </head>
-    
     <body>
-        <div class="nav">
-            <a id="title" href=index.html>JellyClouds</a> 
-            <a id="nav" href=index.html>| Home |</a> 
-            <a id="nav" href=bio.html>| Bio |</a> 
-            <a id="nav" href=code.html>| Code |</a> 
-            <a id="nav" href=cloud_storage.html>| Cloud Storage |</a>
-        </div>
-    
-        <div class="content">
-            <div class="content_header">
-                <h1></h1>
+        <header>
+            <a href="index.html" id="title">JellyClouds</a>
+
+            <div id="mobile-links">
+                <a href=index.html>Home</a> <br>
+                <a href=bio.html>Bio</a> <br>
+                <a href=code.html>Code</a> <br>
+                <a href=cloud_storage.html>Cloud Storage</a> <br>
             </div>
-            
+            <a href="javascript:void(0);" onclick="menu()">
+                <img src="Media/menu.png" id="menu">
+            </a>
+        </header>
+
+        <div id="page">
+            <div id="content_header">
+                <p>Temp</p>
+            </div>
+            <div id="article">
+
+            </div>
         </div>
-    
+
+        <script>
+            function menu() {
+                var link = document.getElementById("mobile-links");
+                var pagecon = document.getElementById("page");
+                if (link.style.display === "block") {
+                    link.style.display = "none";
+                    pagecon.style.top = "40px";
+                } else {
+                    link.style.display = "block";
+                    pagecon.style.top = "160px";
+                }
+            } 
+        </script>
+        <footer>
+            <p>&copy; 2020 Jellyclouds.com</p>
+        </footer>
     </body>
 </html>

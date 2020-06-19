@@ -13,10 +13,10 @@
             <a href="index.html" id="title">JellyClouds</a>
     
             <div id="mobile-links">
-                <a href=index.html>Home</a> 
-                <a href=bio.html>Bio</a> 
-                <a href=code.html>Code</a> 
-                <a href=cloud_storage.html>Cloud Storage</a>
+                <a href=index.html>Home</a> <br>
+                <a href=bio.html>Bio</a> <br>
+                <a href=code.html>Code</a> <br>
+                <a href=cloud_storage.html>Cloud Storage</a><br>
             </div>
             <a href="javascript:void(0);" onclick="menu()">
                 <img src="Media/menu.png" id="menu">
@@ -36,17 +36,17 @@
             function menu() {
                 var link = document.getElementById("mobile-links");
                 var pagecon = document.getElementById("page");
-                if (link.style.display === "grid") {
+                if (link.style.display === "block") {
                     link.style.display = "none";
                     pagecon.style.top = "40px";
                 } else {
-                    link.style.display = "grid";
-                    pagecon.style.top = "130px";
+                    link.style.display = "block";
+                    pagecon.style.top = "160px";
                 }
             } 
         </script>
         <footer>
-    
+            <p>&copy; 2020 Jellyclouds.com</p>
         </footer>
     </body>
 </html>
