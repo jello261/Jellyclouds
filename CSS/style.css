@@ -1,58 +1,79 @@
-body {
-    background-color: #25274D;
+/*Phone or anything with a with smaller then 768px*/
+* {
+    font-family: 'Arvo';
+    box-sizing: border-box;
 }
-.nav {
-    top: 2px;
+header {
+    left: 0%;
+    top: 0%;
     position: fixed;
     background-color: #2E9CCA;
-    border-width: 3px;
-    border-radius: 5px;
-    border-color: #AAABB8;
-    border-style: solid;
-    width: 99%;
-} 
-.nav h2 {
-    display: inline;
-    margin-left: 1%;
-    color: #25274D;
-}  
-#nav:link, #nav:visited {
-    text-align: center;
-    font-size: 150%;
+    width: 100%;
+    border-bottom: rgb(99, 99, 99);
+    border-width: 4px;
+    border-bottom-style: solid;
+    padding: 4px;
+}
+header a{
     color: #25274D;
     text-decoration: none;
-    margin-left: 5%;
-    margin-right: 5%;
 }
-#nav:hover, #nav:active {
-    color:#29648A;
+#title:hover {
+    background-color: whitesmoke;
 }
-section {
-    margin-top: 2.8%;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-bottom: 98%;
-    background-color: #2E9CCA;
-    border-width: 3px;
-    border-radius: 5px;
-    border-color: #AAABB8;
-    border-style: solid;
+#title a{ 
+    display: block;
 }
-.sec {
+#title{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0px 0px 0px 10px;
+}
+#menu{
+    position: fixed;
+    top: 0px;
+    right: 5%;
+}
+#page {
+    width: 95%;
+    position: absolute;
+    top: 40px;
+}
+#article {
+    overflow-wrap: break-word;
     color: #25274D;
-    margin-left: 3%;
-    margin-right: 3%;
 }
-#news {
-    border-width: 3px;
-    border-radius: 5px;
-    border-color: #AAABB8;
-    border-style: solid;
+#content_header {
+    color: #25274D;
+    background-color: #2E9CCA;
+    font-size: 20px;
+    border-bottom: rgb(99, 99, 99);
+    border-width: 4px;
+    border-bottom-style: solid;
 }
-#news h3{
-    color:black; 
-    display: inline;
+#mobile-links {
+    display: none;
+    padding: 10px;
 }
-
-
+#mobile-links a{
+    padding: 5px 0px 5px 0px;
+    font-size: 20px;
+}
+#mobile-links a:hover {
+    background-color: whitesmoke;
+}
+footer{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-color: #2E9CCA;
+    width: 100%;
+    border-top: rgb(99, 99, 99);
+    border-width: 4px;
+    border-top-style: solid;
+}
+footer p{
+    color: #25274D;
+    font-size: 12px;
+}
 
