@@ -1,0 +1,63 @@
+/*Phone or anything with a with smaller then 768px*/
+* {
+    font-family: 'Arvo';
+    box-sizing: border-box;
+}
+header {
+    left: 0%;
+    top: 0%;
+    position: fixed;
+    background-color: #2E9CCA;
+    width: 100%;
+    border-bottom: rgb(99, 99, 99);
+    border-width: 4px;
+    border-bottom-style: solid;
+    padding: 4px;
+    margin: auto;
+}
+header a{
+    color: #25274D;
+    text-decoration: none;
+}
+#title:hover {
+    background-color: #ddd;
+}
+#title a{ 
+    display: block;
+}
+#title{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0px 0px 0px 10px;
+}
+#menu{
+    position: fixed;
+    top: 0px;
+    right: 5%;
+}
+#page {
+    width: 95%;
+    position: absolute;
+    top: 40px;
+}
+#article {
+    overflow-wrap: break-word;
+    color: #25274D;
+}
+#content_header {
+    color: #25274D;
+    background-color: #2E9CCA;
+    font-size: 20px;
+    border-bottom: rgb(99, 99, 99);
+    border-width: 4px;
+    border-bottom-style: solid;
+}
+#mobile-links {
+    display: none;
+    padding: 5px;
+    font-size: 17px;
+}
+#mobile-links a:hover {
+    background-color: #ddd;
+}
+
