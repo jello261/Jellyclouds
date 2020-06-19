@@ -1,109 +1,63 @@
 /*Phone or anything with a with smaller then 768px*/
-body {
+* {
     font-family: 'Arvo';
+    box-sizing: border-box;
 }
-.nav {
+header {
     left: 0%;
     top: 0%;
-    padding: 6px;
     position: fixed;
     background-color: #2E9CCA;
     width: 100%;
     border-bottom: rgb(99, 99, 99);
     border-width: 4px;
     border-bottom-style: solid;
-    overflow: hidden;
+    padding: 4px;
+    margin: auto;
 }
-#title:link, #title:visited {
-    font-size: 28px;
-    font-weight: bold;
+header a{
     color: #25274D;
     text-decoration: none;
-    margin-left: 5px;
 }
-.mobile-nav1, .mobile-nav2, .mobile-nav3{
+#title:hover {
+    background-color: #ddd;
+}
+#title a{ 
+    display: block;
+}
+#title{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0px 0px 0px 10px;
+}
+#menu{
     position: fixed;
-    top: 6px;
+    top: 0px;
     right: 5%;
-    width: 42px;
-    height: 8px;
-    background-color: #25274D;
-    border-style:none;
-    border-radius: 4px;
 }
-.mobile-nav2{
-    position: fixed;
-    top: 17px;
-    right: 5%;
-    width: 42px;
-    height: 8px;
-    background-color: whitesmoke;
-    border-style:none;
-    border-radius: 4px;
-}
-.mobile-nav3{
-    position: fixed;
-    top: 30px;
-    right: 5%;
-    width: 42px;
-    height: 8px;
-    background-color: rgb(99, 99, 99);
-    border-style:none;
-    border-radius: 4px;
-}
-#nav:link, #nav:visited {
-    display: none;
-}
-#title:hover, #nav:hover{
-    background-color: rgb(99, 99, 99);
-}
-.content {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 40px;
-    position: relative;
+#page {
     width: 95%;
+    position: absolute;
+    top: 40px;
+}
+#article {
     overflow-wrap: break-word;
     color: #25274D;
 }
-.content_header {
+#content_header {
+    color: #25274D;
     background-color: #2E9CCA;
+    font-size: 20px;
     border-bottom: rgb(99, 99, 99);
     border-width: 4px;
     border-bottom-style: solid;
 }
-
-/*Ipad and desktop devices layout*/
-@media only screen and (min-width:768px) {
-    .nav {
-        padding: 6px;
-        border-width: 4px;
-    }
-    #title:link, #title:visited {
-        font-size: 28px;
-        margin: 0px 50px 0px 20px;
-    }
-    #nav:link, #nav:visited {
-        display: inline;
-        font-size: 20px;
-        color: #25274D;
-        text-decoration: none;
-        margin: 0px 2px 0px 2px;
-    }
-    #title:hover, #nav:hover{
-        background-color: rgb(99, 99, 99);
-    }
-    .content {
-        width: 75%;
-    }
-    .mobile-nav3, .mobile-nav1, .mobile-nav2 {
-        display:none;
-    }
-    /*.content_header {
-        background-color: #2E9CCA;
-        border-bottom: rgb(99, 99, 99);
-        border-width: 4px;
-        border-bottom-style: solid;
-    }
-    */
+#mobile-links {
+    display: none;
+    padding: 5px;
+    font-size: 17px;
 }
+#mobile-links a:hover {
+    background-color: #ddd;
+}
+

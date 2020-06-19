@@ -1,0 +1,67 @@
+/*Ipad and desktop devices layout*/
+@media only screen and (min-width:768px) {
+    body {
+        font-family: 'Arvo';
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .nav {
+        left: 0%;
+        top: 0%;
+        padding: 6px;
+        position: fixed;
+        background-color: #2E9CCA;
+        width: 100%;
+        border-bottom: rgb(99, 99, 99);
+        border-width: 4px;
+        border-bottom-style: solid;
+    }
+    #title:link, #title:visited {
+        font-size: 28px;
+        font-weight: bold;
+        color: #25274D;
+        text-decoration: none;
+        padding: 0px 15px 0px 2px;
+        margin: left;
+        display: block;
+    }
+    #title:hover{
+        background-color: rgb(99, 99, 99);
+    }
+    #nav{
+        display: block;
+    }
+    #nav:link, #nav:visited {
+        font-size: 20px;
+        font-weight: bold;
+        color: #25274D;
+        text-decoration: none;
+        padding: 0px 2px 0px 2px;
+    }
+    #nav:hover{
+        background-color: rgb(99, 99, 99);
+    }
+    .content {
+        width: 75%;
+    }
+    #mobile-nav1, #mobile-nav2, #mobile-nav3, #moblie-links{
+        display:none;
+    }
+    .content {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+        position: relative;
+        width: 70%;
+        overflow-wrap: break-word;
+        color: #25274D;
+    }
+    .content_header {
+        background-color: #2E9CCA;
+        border-bottom: rgb(99, 99, 99);
+        border-width: 4px;
+        border-bottom-style: solid;
+    }
+    
+}

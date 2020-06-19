@@ -8,28 +8,45 @@
         <title>JellyClouds</title>
     </head>
     <body>
-    
-        <div class="nav">
-            <a id="title" href=index.html>JellyClouds</a> 
-            <a id="nav" href=index.html>| Home |</a> 
-            <a id="nav" href=bio.html>| Bio |</a> 
-            <a id="nav" href=code.html>| Code |</a> 
-            <a id="nav" href=cloud_storage.html>| Cloud Storage |</a>
-        
-        <div class="mobile-nav1"></div>
-        <div class="mobile-nav2"></div>
-        <div class="mobile-nav3"></div>
-        </div>
-    
-        <div class="content">
-            <article>
-                <div class="content_header">
-                    <h1>News</h1>
-                </div>
+        <header>
+            <a href="index.html" id="title">JellyClouds</a>
+
+            <div id="mobile-links">
+                <a href=index.html>Home</a> 
+                <a href=bio.html>Bio</a> 
+                <a href=code.html>Code</a> 
+                <a href=cloud_storage.html>Cloud Storage</a>
+            </div>
+            <a href="javascript:void(0);" onclick="menu()">
+                <img src="Media/menu.png" id="menu">
+            </a>
+        </header>
+
+        <div id="page">
+            <div id="content_header">
+                <p>News</p>
+            </div>
+            <div id="article">
                 <p>June 13, 2020: Update of the websites layout</p>
                 <p>June 5, 2020: Website was published</p>
-            </article>
+            </div>
         </div>
-    
+
+        <script>
+            function menu() {
+                var link = document.getElementById("mobile-links");
+                var pagecon = document.getElementById("page");
+                if (link.style.display === "grid") {
+                    link.style.display = "none";
+                    pagecon.style.top = "40px";
+                } else {
+                    link.style.display = "grid";
+                    pagecon.style.top = "130px";
+                }
+            } 
+        </script>
+        <footer>
+
+        </footer>
     </body>
 </html>
